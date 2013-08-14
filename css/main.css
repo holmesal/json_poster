@@ -1,0 +1,17 @@
+#mainPopup {
+    padding: 10px;
+    height: 400px;
+    width: 800px;
+    font-family: Helvetica, Ubuntu, Arial, sans-serif;
+    color: white;
+    background-color: #595959;
+}
+
+form span {
+    display: block;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 2em;
+}

@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+  <link rel="stylesheet" href="../../css/main.css"/>
+</head>
+<body ng-app="jsonPoster" ng-csp>
+  <script src="../../lib/angular/angular.min.js"></script>
+  <script src="../app.js"></script>
+  <div id="mainPopup">
+    <h1>JSON POSTer</h1>
+    <div ng-controller="PostFormCtrl" ng-model="data">
+      <form name="postForm" ng-submit="post(data)">
+        <span>URL:</span>
+        <input ng-model="data.url" type="test" ng-required="true" />
+        <div>
+          <span>JSON Data:</span>
+          <textarea ng-model="data.jsonData" ng-required="true" rows="10" cols="80"></textarea>
+        </div>
+        Save Data: <input type="checkbox" ng-model="data.save" />
+        <input type="submit" ng-disabled="postForm.$invalid" />
+      </form>
+      <div>
+        <button ng-click="populateFromStored()">Populate From Last Saved</button>
+      </div>
+    </div>
+  </div>
+</body>

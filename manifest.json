@@ -1,0 +1,21 @@
+{
+  "name": "JSON POSTer",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Send JSON Payloads in POST Request",
+  "homepage_url": "http://www.onemightyroar.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "JSON POSTer",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*"
+  ]
+}
