@@ -6,9 +6,6 @@ app.controller('PostFormCtrl', function ($scope, $http, $window) {
   $scope.data = {save: true};
 
   $scope.post = function (data) {
-    console.log("URL: #{data.url}");
-    console.log("JSON Data: ");
-    console.log(JSON.parse(data.jsonData));
 
     if (data.save === true) {
       $window.localStorage.url = data.url;

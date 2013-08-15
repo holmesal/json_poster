@@ -12,6 +12,15 @@ form span {
     padding: 5px;
 }
 
+input, textarea {
+    -webkit-border-radius: 5px;
+}
+
 h1 {
     font-size: 2em;
+}
+
+.url {
+    width: 500px;
+    height: 30px;
 }
