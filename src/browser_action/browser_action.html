@@ -21,6 +21,8 @@
       <div>
         <button class="populate" ng-click="populateFromStored()">Populate From Last Saved</button>
       </div>
+        <hr>
+      Preset: <select ng-model="preset" ng-options="choice.name for choice in presets"></select>
     </div>
   </div>
 </body>

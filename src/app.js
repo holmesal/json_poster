@@ -2,6 +2,10 @@ app = angular.module('jsonPoster', [])
 
 app.controller('PostFormCtrl', function ($scope, $http, $window) {
 
+  $http.get('../presets.json').success(function(presets){
+      $scope.presets = presets;
+  });
+
   // default save flag to true
   $scope.data = {save: true};
 
@@ -25,5 +29,12 @@ app.controller('PostFormCtrl', function ($scope, $http, $window) {
     $scope.data.url = $window.localStorage.url
     $scope.data.jsonData = $window.localStorage.jsonData
   }
+
+  $scope.$watch('preset',function(preset){
+      if (preset){
+          $scope.data.jsonData = JSON.stringify(preset.data);
+          $scope.data.url = preset.namespace;
+      }
+  });
 
 });
