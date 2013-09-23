@@ -1,7 +1,7 @@
 [
     {
         "name": "wall",
-        "namespace": "http://localhost:9200/events/686/walls",
+        "namespace": "http://node.staging.robinpowered.com/events/686/walls",
         "data": {
             "event": "create",
             "data": {
@@ -17,7 +17,7 @@
     },
     {
         "name": "section",
-        "namespace": "http://localhost:9200/events/686/walls/197/sections",
+        "namespace": "http://node.staging.robinpowered.com/events/686/walls/197/sections",
         "data": {
             "event": "create",
             "data": {
@@ -40,7 +40,7 @@
     },
     {
         "name": "content",
-        "namespace": "http://localhost:9200/events/686/walls/197/sections/547/contents",
+        "namespace": "http://node.staging.robinpowered.com/events/686/walls/197/sections/547/contents",
         "data": {
             "event": "create",
             "data": {
@@ -60,7 +60,7 @@
     },
     {
         "name": "layout",
-        "namespace": "http://localhost:9200/events/686/walls/197/layouts",
+        "namespace": "http://node.staging.robinpowered.com/events/686/walls/197/layouts",
         "data": {
             "event": "create",
             "data": {
@@ -105,6 +105,101 @@
                 ],
                 "show_at": "Thu, 06 Jun 2013 04:30:00 +0000",
                 "hide_at": "Tue, 06 Aug 2013 11:30:00 +0000"
+            }
+        }
+    },
+    {
+        "name": "instagram",
+        "namespace": "http://node.staging.robinpowered.com/walls/197/sections/493/contents",
+        "data": {
+            "event":"approve",
+            "data":{
+                "id": 1378957,
+                "section_id": 493,
+                "type": "instagram",
+                "nature": "image",
+                "is_approved": true,
+                "is_deleted": false,
+                "sort_index": 1378957,
+                "created_at": "Fri, 26 Jul 2013 21:57:06 +0000",
+                "instagram_id": "508761479854819851_391237433",
+                "from": "ron_pieters",
+                "from_title": "Ron Pieters",
+                "avatar": "http://images.ak.instagram.com/profiles/profile_391237433_75sq_1374727305.jpg",
+                "image": "http://distilleryimage9.s3.amazonaws.com/78e33f5a145711e3868522000ab592bd_6.jpg",
+                "date": "Fri, 26 Jul 2013 20:05:16 +0000",
+                "body": "#fitness #2 #sunrise #time #instafashion #skyporn #design #sand #dope #tagsforshare #cloudporn #streetphotography #ignation #graffiti #sleepy #apple @tagsforlike #skateboarding  #2012 #2013 #louis #is #gold #igers #igersoftheday #igersmanila #sf #zayn #winter #little #bed"
+            }
+        }
+    },
+    {
+        "name": "weather",
+        "namespace": "http://node.staging.robinpowered.com/walls/197/sections/493/contents",
+        "data": {
+            "event":"update",
+            "data":{
+                "id": 1142860,
+                "section_id": 495,
+                "type": "weather",
+                "nature": "weather",
+                "is_approved": true,
+                "is_deleted": false,
+                "sort_index": 1142860,
+                "created_at": "Thu, 18 Jul 2013 23:08:17 +0000",
+                "coordinates": "42.3584308,-71.0597732",
+                "image": "rain",
+                "date": "Fri, 26 Jul 2013 21:01:02 +0000",
+                "body": "{\"time\":1374872462,\"summary\":\"Drizzle\",\"icon\":\"rain\",\"precipIntensity\":0.003,\"precipIntensityError\":0,\"precipProbability\":0.99,\"precipType\":\"rain\",\"temperature\":70.26,\"dewPoint\":63.59,\"windSpeed\":8.57,\"windBearing\":349,\"cloudCover\":1,\"humidity\":0.78,\"pressure\":1012.69,\"visibility\":9.48,\"ozone\":308.65}",
+                "title": "Drizzle"
+            }
+        }
+    },
+    {
+        "name": "wall_layout",
+        "namespace": "http://node.staging.robinpowered.com/walls/197/layouts",
+        "data": {
+            "event": "update",
+            "data": {
+                "id": 259,
+                "template_id": 7,
+                "name": "1/3 Steeze",
+                "updated_at": "Wed, 04 Sep 2013 15:25:35 +0000",
+                "created_at": "Fri, 12 Jul 2013 15:39:33 +0000",
+                "sections": [
+                  {
+                    "id": 495,
+                    "layout_id": 259,
+                    "type": "weather",
+                    "nature": "text",
+                    "is_moderated": false,
+                    "show_at": "Fri, 12 Jul 2013 08:18:00 +0000",
+                    "hide_at": "Thu, 26 Sep 2013 11:00:00 +0000",
+                    "section_slug": "left-third-sidebar",
+                    "meta": {
+                      "address": "Boston, MA, USA",
+                      "lat": 42.3584308,
+                      "lng": -71.0597732
+                    },
+                    "background_image": ""
+                  },
+                  {
+                    "id": 493,
+                    "layout_id": 259,
+                    "type": "instagram",
+                    "nature": "image",
+                    "is_moderated": false,
+                    "show_at": "Fri, 12 Jul 2013 05:00:00 +0000",
+                    "hide_at": "Thu, 26 Sep 2013 11:00:00 +0000",
+                    "section_slug": "right-main",
+                    "meta": {
+                      "source_type": "tagged_media",
+                      "tag": "skydive"
+                    },
+                    "background_image": ""
+                  }
+                ],
+                "show_at": "Wed, 19 Jun 2013 15:00:00 +0000",
+                "hide_at": "Wed, 09 Oct 2013 11:00:00 +0000"
             }
         }
     }
